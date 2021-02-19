@@ -208,7 +208,7 @@ export const ProjectContextProvider = ({ children } : childrenObj) => {
 		}
 		axios.get('http://localhost:8080/v1/works-in-api/works-in-user', { withCredentials: true })
 			.then(async (res) => {
-				const data = res.data;
+				const { data } = res;
 				const tmpProjectMap : ProjectMap = {};
 				for (let i = 0; i < data.auths.length; i += 1) {
 					const tmpProject : ProjectObj = {
@@ -338,7 +338,7 @@ export const ProjectContextProvider = ({ children } : childrenObj) => {
 		})
 			.then((res) => {
 				console.dir(res);
-				const data : ProjectObj = res.data;
+				const { data } = res;
 				const tmpProject : ProjectMap = project;
 				setProject(tmpProject);
 				forceUpdate(!update);

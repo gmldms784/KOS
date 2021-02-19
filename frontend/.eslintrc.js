@@ -33,7 +33,7 @@ module.exports = {
 		], // indent는 tab으로 통일
 		'react/jsx-indent' : [2, 'tab'], // jsx에서도 indent tab으로 통일
 		'react/jsx-filename-extension': [1, { 'extensions': ['.js', '.jsx', '.ts'] }], // 확장자 설정
-		'linebreak-style': ['error', 'windows'], // CRLF
+		'linebreak-style': ['error', 'unix'], // LF
 		'no-unused-vars': 'warn', // 정의 후 사용하지 않은 변수는 경고만 하기
 		'no-use-before-define': 1, // 정의 전에 사용 금지
 		'no-console': 0, // console 사용하기
