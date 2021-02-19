@@ -16,4 +16,4 @@ jobs:
         run: cd frontend && npm install
 
       - name: test                   # React test
-        run: npm start
+        run: cd frontend && npm start
