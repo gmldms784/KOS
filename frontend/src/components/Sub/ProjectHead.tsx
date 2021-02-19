@@ -9,6 +9,7 @@ import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 import SearchIcon from '@material-ui/icons/Search';
 import BackupIcon from '@material-ui/icons/Backup';
 import GroupAddIcon from '@material-ui/icons/GroupAdd';
+import SortIcon from '@material-ui/icons/Sort';
 
 import {
 	Button, SubMenu, SideMenu, Member
@@ -110,6 +111,11 @@ const ProjectHead = forwardRef<HTMLDivElement, ProjectHeadProps>(({
 					/>
 				</Grid>
 				<Grid className="plus-menu-con">
+					<Button
+						classList={[]}
+						value={<SortIcon />}
+						tooltip="정렬하기"
+					/>
 					<Button
 						classList={[]}
 						value={<BackupIcon onClick={searchTask} />}

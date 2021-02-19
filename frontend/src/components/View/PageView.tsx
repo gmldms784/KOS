@@ -32,6 +32,7 @@ const PageView = forwardRef<HTMLDivElement, PageViewProps>(({
 		task = tasks[Number(Object.keys(tasks)[0])][0];
 	}
 	// 지금은 가장 처음 task를 받아오게 설정되어있음
+
 	const [openTask, setOpenTask] = useState(false);
 
 	const handleTaskWindowOpen = () => {

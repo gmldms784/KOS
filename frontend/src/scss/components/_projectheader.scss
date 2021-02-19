@@ -113,5 +113,11 @@
 		display: flex;
 		align-items: center;
 		margin-right: 10px;
+		.btn{
+			margin-right: 5px;
+			&:last-of-type{
+				margin-right: 0;
+			}
+		}
 	}
 }
