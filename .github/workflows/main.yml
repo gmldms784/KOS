@@ -15,5 +15,5 @@ jobs:
       - name: Install Dependencies    # 의존 파일 설치
         run: cd frontend && npm install
 
-      - name: test                   # React test
-        run: cd frontend && npm start
+      - name: frontend build                 # React build
+        run: cd frontend && npm run build
