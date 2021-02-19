@@ -1,0 +1,47 @@
+.search-input-con{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 2rem 0;
+	.search-input{
+		width: 80%;
+		.MuiInputLaFbel-root{
+			background-color: white;
+			padding: 0 10px;
+		}
+	}
+	.btn{
+		width: 15%;
+		flex-shrink: 0;
+		display: flex;
+		justify-content: center;
+		border: 1px solid lightgray;
+		button{
+			padding: 20px 10px;
+		}
+	}
+}
+.search-result-con{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	.member-paper{
+		width: 49%;
+		display: flex;
+		padding: 10px;
+		justify-content: space-between;
+		margin-bottom: 1rem;
+		.member{
+			cursor: initial;
+		}
+	}
+	.name{
+		display: flex;
+		align-items: center;
+	}
+	.btn{
+		border: 1px solid lightgray;
+		display: flex;
+	}
+}
